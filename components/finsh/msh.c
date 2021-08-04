@@ -132,7 +132,7 @@ static int msh_split(char *cmd, rt_size_t length, char *argv[FINSH_ARG_MAX])
 
     while (position < length)
     {
-        /* strip bank and tab */
+        /* strip blank and tab */
         while ((*ptr == ' ' || *ptr == '\t') && position < length)
         {
             *ptr = '\0';
